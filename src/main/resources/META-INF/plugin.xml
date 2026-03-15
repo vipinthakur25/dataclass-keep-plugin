@@ -1,0 +1,22 @@
+<idea-plugin>
+    <id>com.vipin.datakeepplugin</id>
+    <name>DataClass Keep Plugin</name>
+    <vendor>Vipin</vendor>
+
+    <depends>com.intellij.modules.platform</depends>
+    <depends>org.jetbrains.kotlin</depends>
+
+    <extensions defaultExtensionNs="org.jetbrains.kotlin">
+        <supportsKotlinPluginMode supportsK2="true"/>
+    </extensions>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <localInspection
+                language="kotlin"
+                implementationClass="com.vipin.datakeepplugin.KeepAnnotationInspection"
+                displayName="Missing @Keep on data class"
+                groupName="Android"
+                enabledByDefault="true"
+                level="WARNING"/>
+    </extensions>
+</idea-plugin>
