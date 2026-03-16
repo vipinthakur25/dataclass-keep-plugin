@@ -64,7 +64,6 @@ data class User(
 
 ## Planned Features
 
-- [ ] Detect Gson/Retrofit models missing `@SerializedName`
 - [ ] Detect Room DAOs missing proper annotations
 - [ ] Batch fix — add `@Keep` to all data classes at once
 
