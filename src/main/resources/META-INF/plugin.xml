@@ -18,5 +18,14 @@
                 groupName="Android"
                 enabledByDefault="true"
                 level="WARNING"/>
+
+        <localInspection
+                language="kotlin"
+                implementationClass="com.vipin.datakeepplugin.RetrofitKeepInspection"
+                shortName="RetrofitResponseMissingKeep"
+                displayName="Retrofit response class missing @Keep"
+                groupName="Android"
+                enabledByDefault="true"
+                level="WARNING"/>
     </extensions>
 </idea-plugin>

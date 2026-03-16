@@ -17,6 +17,7 @@ prevents this — but it's easy to forget to add it.
 ## What This Plugin Does
 
 - Shows a warning on any `data class` missing `@Keep`
+- Detects Retrofit response classes missing `@Keep`
 - Offers a one-click quick fix to add it automatically
 - Works in both IntelliJ IDEA and Android Studio
 
@@ -66,7 +67,6 @@ data class User(
 - [ ] Detect Gson/Retrofit models missing `@SerializedName`
 - [ ] Detect Room DAOs missing proper annotations
 - [ ] Batch fix — add `@Keep` to all data classes at once
-- [ ] Support for Java data classes
 
 ## Built With
 
