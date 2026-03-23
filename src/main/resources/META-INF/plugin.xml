@@ -1,6 +1,25 @@
 <idea-plugin>
     <id>com.vipin.datakeepplugin</id>
-    <name>DataClass Keep Plugin</name>
+    <name>DataClass Keep</name>
+    <description><![CDATA[
+    Detects Kotlin data classes and Retrofit response classes
+    missing the <code>@Keep</code> annotation, preventing
+    ProGuard/R8 from stripping them during minification.
+    <br><br>
+    <b>Features:</b>
+    <ul>
+        <li>Warns when a data class is missing <code>@Keep</code></li>
+        <li>Warns when Retrofit response classes are missing <code>@Keep</code></li>
+        <li>One-click quick fix to add <code>@Keep</code> automatically</li>
+        <li>Supports GET, POST, PUT, DELETE, PATCH, HEAD annotations</li>
+    </ul>
+    <b>Why use this?</b>
+    <br>
+    When building release APKs, ProGuard/R8 renames or removes classes.
+    Data classes used in Gson, Retrofit, or Room can cause runtime crashes
+    if not annotated with <code>@Keep</code>. This catches the problem at
+    edit time before it reaches production.
+]]></description>
     <vendor>Vipin</vendor>
 
     <depends>com.intellij.modules.platform</depends>
