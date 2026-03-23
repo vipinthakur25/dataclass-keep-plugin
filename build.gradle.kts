@@ -30,7 +30,7 @@ kotlin {
 
 intellijPlatform {
     pluginConfiguration {
-        name = "DataClass Keep Plugin"
+        name = "DataClass Keep"
         version = "0.0.1"
         ideaVersion {
             sinceBuild = "251"
